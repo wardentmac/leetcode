@@ -2,7 +2,7 @@
 from typing import List
 
 
-# 方法1 简单粗暴的两层for循环遍历，然后添加
+# 简单粗暴的两层for循环遍历，然后添加
 def construct2DArray_1(original: List[int], m: int, n: int) -> List[List[int]]:
     if len(original) != m * n:
         return []
@@ -16,7 +16,7 @@ def construct2DArray_1(original: List[int], m: int, n: int) -> List[List[int]]:
         return result_list
 
 
-# 方法2 生成1个均为0的二维数组，遍历原数组1次，截取相应位置的一段一维数组
+# 生成1个均为0的二维数组，遍历原数组1次，截取相应位置的一段一维数组
 def construct2DArray_2(original: List[int], m: int, n: int) -> List[List[int]]:
     if len(original) != m * n:
         return []
